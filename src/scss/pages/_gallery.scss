@@ -1,0 +1,179 @@
+.section-gallery{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: rgb(59, 17, 54);
+    margin: 0;
+    padding: 0;
+
+    .particle-js-wrapper{
+        width: 100%;
+        height: 100vh;
+
+        @media screen and (max-width: 620px){
+            width: 400%;
+            height: 100%;
+        }
+    }
+
+    .section-heading{
+        font-size: 56px;
+        position: absolute;
+        top: 5%;
+        left: 12%;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 600;
+
+        @media screen and (max-width: 620px){
+            font-size: 32px;
+            top: 4%;
+            left: 20%;
+        }
+    }
+
+    .gallery-wrapper{
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+
+        @media screen and (max-width: 620px){
+            width: 90%;
+            height: 40%;
+        }
+
+        .gallery-preview{
+            width: 100%;
+            height: 80%;
+            position: relative;
+            display: block;
+            overflow: hidden;
+
+            // background-size: initial;
+            background-color: rgba(207, 207, 207, 0.151);
+            // background-repeat: no-repeat;
+
+            img{
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .gallery-items{
+            margin-top: 2px;
+            width: 100%;
+            height: 10%;
+            display: block;
+            position: relative;
+            transition: 0.5 all ease;
+            overflow: hidden;
+            
+            &--container{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transition: 0.5 all ease;
+                box-sizing: border-box;
+
+                &-item{
+                    display: block;
+                    float: left;
+                    position: relative;
+                    width: 10%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    opacity: 0.5;
+                    overflow: hidden;
+                    cursor: pointer;
+                    padding: 2px;
+                    border: 5px solid rgba(255, 255, 255, 0);
+                    transform: translateX(-50%);
+
+                    @media screen and (max-width: 620px){
+                        border: 2px solid rgba(255, 255, 255, 0);
+                    }
+
+                    &.selected{
+                        opacity: 1;
+                        border: none;
+                        transition: 0.5 all ease;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.5 all ease;
+                    }
+                }
+
+                
+
+            }
+
+            
+        }
+    }
+
+    .diya-1-image{
+        position: absolute;
+        bottom: -8px;
+        left: 20px;
+        width: 10%;
+
+
+        @media screen and (max-width: 620px){
+            width: 20%;
+        }
+
+        img{
+            width: 100%;
+            
+            &:nth-child(2){
+                position: absolute;
+                left: 55px;
+                top: -90px; 
+
+                @media screen and (max-width: 620px){
+                    left: 32px;
+                    top: -50px;
+                }
+            }
+        }
+    }
+
+    .diya-2-image{
+        position: absolute;
+        bottom: -8px;
+        right: 20px;
+        width: 10%;
+
+        @media screen and (max-width: 620px){
+            width: 20%;
+        }
+
+        img{
+            width: 100%;
+
+            &:nth-child(2){
+                position: absolute;
+                left: -57px;
+                top: -90px; 
+                transform: rotateY(180deg);
+
+                @media screen and (max-width: 620px){
+                    left: -32px;
+                    top: -50px;
+                }
+            }
+        }
+    }
+}

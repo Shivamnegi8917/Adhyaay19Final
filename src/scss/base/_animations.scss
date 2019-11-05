@@ -1,0 +1,62 @@
+@keyframes fly{
+    0%{
+        bottom: 0px;
+    }
+    100%{
+        bottom: 120vh;
+    }
+    
+}
+
+@keyframes glow{
+    50%{ transform: scale(1.5)}
+    100%{ transform: scale(1)}
+}
+
+@keyframes fillUp{
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100vh;
+    }
+}
+
+@keyframes textBounce{
+    25%{
+       transform: translateY(-15px) rotateX(-50deg) ; 
+    }
+    50%{
+        transform: translateY(0px) rotateX(-50deg); 
+    }
+}
+
+@keyframes shadow-motion{
+    10%{
+        top: 80px;
+        left: -10px;
+    }
+
+    20%{
+        top: 60px;
+        left: -5px;
+    }
+}
+
+@keyframes rays{
+    100%{
+        transform: rotate(360deg) translate(0,0);
+    }
+}
+
+@keyframes colorchange{
+    50%{
+        background: linear-gradient( to right, yellow , skyblue );
+        background-clip: text;
+    }
+    100%{
+        background: linear-gradient( to right, skyblue , rgb(226, 226, 22));
+        background-clip: text;
+    }
+}

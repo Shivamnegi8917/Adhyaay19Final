@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/utilities";
+
+@import "components/shootingStar";
+@import "components/navbar";
+@import "components/counter";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/events";
+@import "pages/adhyaayEvents";
+@import "pages/loader";
+@import "pages/mainLogo";
+@import "pages/gallery";
+@import "pages/footer";
+@import "pages/council";
+@import "pages/eventViewer";
+@import "pages/RegisterModal";
+@import "pages/LoginModal";
